@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Author - @kamalinux
+# Author - @kamalinux
 
 import random
 number = random.randint(-10, 10)
