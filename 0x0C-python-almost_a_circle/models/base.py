@@ -22,7 +22,6 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
 
-    """
     @classmethod
     def save_to_file(cls, list_objs):
         """ Save object in a file """
@@ -37,6 +36,7 @@ class Base:
         with open(filename, 'w') as f:
             f.write(lists)
 
+    """
     @staticmethod
     def from_json_string(json_string):
         """ JSON string to dictionary """
