@@ -53,7 +53,6 @@ class Base:
         new.update(**dictionary)
         return new
 
-    """
     @classmethod
     def load_from_file(cls):
         """ Returns a list of instances """
@@ -68,4 +67,4 @@ class Base:
         for index in range(len(list_cls)):
             list_ins.append(cls.create(**list_cls[index]))
 
-        return list_ins"""
+        return list_ins
