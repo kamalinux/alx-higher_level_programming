@@ -43,7 +43,6 @@ class Base:
             return []
         return json.loads(json_string)
 
-    """
     @classmethod
     def create(cls, **dictionary):
         """ Create an instance """
@@ -54,6 +53,7 @@ class Base:
         new.update(**dictionary)
         return new
 
+    """
     @classmethod
     def load_from_file(cls):
         """ Returns a list of instances """
