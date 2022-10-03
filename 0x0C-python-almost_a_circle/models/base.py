@@ -36,7 +36,6 @@ class Base:
         with open(filename, 'w') as f:
             f.write(lists)
 
-    """
     @staticmethod
     def from_json_string(json_string):
         """ JSON string to dictionary """
@@ -44,6 +43,7 @@ class Base:
             return []
         return json.loads(json_string)
 
+    """
     @classmethod
     def create(cls, **dictionary):
         """ Create an instance """
