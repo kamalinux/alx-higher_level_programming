@@ -27,7 +27,7 @@ class Rectangle(Base):
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
-            raise ValueError("width must > 0")
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
@@ -74,7 +74,7 @@ class Rectangle(Base):
 
     def area(self):
         """ returns the area of the rectangle object """
-        return self.width * self.heighit
+        return self.width * self.height
 
     def display(self):
         """ displays a rectangle """
@@ -104,3 +104,13 @@ class Rectangle(Base):
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ method that returs a dictionary with properties """
+        list_atr = ['id', 'width', 'height', 'x', 'y']
+        dict_res = {}
+
+        for key in list_atr:
+            dict_res[key] = getattr(self, key)
+
+        return dict_res
